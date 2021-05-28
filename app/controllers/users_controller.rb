@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   def new; end
 
   def create
-    @user = User.new(user_params)
+    # @user = User.new(user_params) # using the private params method
+    @user = User.new(username: params[:username], email: params[:email], password: params[:password]) # the old way
 
     if @user.save
       redirect_to new_users_path
