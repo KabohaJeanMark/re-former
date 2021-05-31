@@ -42,7 +42,6 @@ rails server
 |    READ ALL     |```http://127.0.0.1:3000/``` |```Reads all users```       |
 |    READ ONE      |```http://127.0.0.1:3000/users/<user.id>```  |``` Reads a particular user showing the details. The show view```            |
 |    UPDATE      |```http://127.0.0.1:3000/users/<user.id>/edit``` |```Edits and updates the user of that id. Accessed by edit button on show view```             |
-|    DELETE     |```http://127.0.0.1:3000/users/<user.id>/delete```         |```Deletes a user of that id. Accessed by destroy button on show page```    |
 |    CREATE      |```http://127.0.0.1:3000/users/new```                               |```Creates a new user saving to the database if validation checks pass```            |
 
 ## Author
