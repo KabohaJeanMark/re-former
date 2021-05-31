@@ -1,5 +1,5 @@
 <!-- HTML form
-<form accept-charset="UTF-8" action="/users" method="post">
+<form accept-charset="UTF-8" action="users_path" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label for="username">User Name</label>
   <input type="text" name="user[username]"> <br/>
@@ -12,7 +12,7 @@
 -->
 
 <!-- railsyer form with form_tag
-<%= form_with(url: "/users", method: "post") do %>
+<%= form_tag(users_path) do %>
     <%= label_tag(:username, "User Name") %>
     <%= text_field_tag(:username) %> <br/>
     <%= label_tag(:email, "E-mail") %>
